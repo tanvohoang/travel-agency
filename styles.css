@@ -1,0 +1,462 @@
+:root {
+  font-family: "Space Grotesk", sans-serif;
+  --primary-color: #dba645;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+/*Navbar*/
+#navbar {
+  background-color: rgb(255, 255, 255);
+  position: sticky;
+  top: 0;
+  height: 80px;
+  z-index: 100;
+  transition: box-shadow 0.3s ease; /* Added transition for smooth effect */
+}
+
+#navbar.scrolled {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Added box-shadow for slight shadow effect */
+}
+
+#logo img {
+  height: 56px;
+}
+
+.navbar-toggler span {
+  color: orange;
+}
+
+.navbar .btn-primary {
+  background-color: var(--primary-color);
+  border: none;
+}
+
+.navbar .btn-primary:hover {
+  background-color: orange;
+  color: black;
+}
+
+.navbar-nav {
+  margin-left: 20px;
+}
+
+.nav-items a {
+  font-size: 16px;
+  color: black;
+  transition: 0.5s ease;
+}
+
+.navbar-nav .nav-link {
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+  color: rgb(38, 38, 38);
+}
+
+.navbar-nav .nav-link:hover {
+  background: var(--primary-color);
+  color: white;
+  border-radius: 8px;
+}
+
+.navbar-toggler {
+  font-size: 32px;
+}
+
+/* Home */
+
+.hero {
+  position: relative;
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-image: url(Images/Traveller\ with\ suitcase.png);
+  background-position: center;
+  background-size: cover;
+  max-width: 1400px;
+  margin: auto;
+}
+
+.hero .content {
+  flex: 0 0 50%;
+  padding: 0 60px;
+  max-width: 800px;
+}
+
+.hero .content h1 {
+  color: var(--primary-color);
+  font-size: 70px;
+  font-weight: 800;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.hero .content p {
+  color: grey;
+  font-size: 15px;
+  font-weight: 500;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.changecontent::after {
+  content: " ";
+  color: orange;
+  animation: changetext 10s infinite linear;
+}
+
+@keyframes changetext {
+  0% {
+    content: "France";
+  }
+  10% {
+    content: "Spain";
+  }
+  20% {
+    content: "US";
+  }
+  30% {
+    content: "China";
+  }
+  40% {
+    content: "Italy";
+  }
+  50% {
+    content: "Turkey";
+  }
+  60% {
+    content: "Mexico";
+  }
+  70% {
+    content: "Japan";
+  }
+  80% {
+    content: "India";
+  }
+  90% {
+    content: "Russia";
+  }
+  100% {
+    content: "UAE";
+  }
+}
+
+.hero .content a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: var(--primary-color);
+  color: white;
+  transition: 0.5s;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.hero .content a:hover {
+  background: orange;
+  color: white;
+}
+
+/* Book */
+
+.book .main-text {
+  margin-bottom: 40px;
+  text-align: left;
+  justify-content: left;
+}
+
+.book .card {
+  border-radius: 10px;
+  box-shadow: 0px 5px 5px -6px black;
+  height: 100%;
+}
+
+.book .card .card-image {
+  height: 100%;
+}
+
+.book .card img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.book .row {
+  margin-top: 30px;
+}
+
+.book form {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.book form input {
+  padding: 10px;
+  color: black;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  box-shadow: 0px 5px 5px -6px black;
+  background-color: #fafafa;
+}
+
+.book form textarea {
+  border: none;
+  border-radius: 10px;
+  resize: none;
+  box-shadow: 0px 5px 5px -6px black;
+  height: 200px;
+  background-color: #fafafa;
+}
+
+.book #submit {
+  width: 160px;
+  font-size: 16px;
+  font-weight: 500;
+  background: var(--primary-color);
+  color: white;
+  margin-top: 10px;
+  transition: 0.5s;
+}
+
+.book #submit:hover {
+  background-color: orange;
+  color: black;
+}
+
+/* Packages */
+
+.packages {
+  padding: 20px;
+  max-width: 1400px;
+  margin: auto;
+}
+
+.main-text h1 {
+  text-align: center;
+  margin-top: 30px;
+  font-weight: 500;
+  margin-bottom: 40px;
+}
+
+.galleryheader {
+  margin: auto;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.packages .card {
+  border-radius: 20px;
+  border: none;
+  box-shadow: 2px 4px 6px -5px black;
+  background-color: #fafafa;
+  margin-bottom: 16px;
+  padding: 12px;
+}
+
+.packages .card img {
+  border-radius: 5px;
+  height: 200px;
+}
+
+.packages .card .card-body {
+  background: transparent;
+}
+
+.packages .card .card-body h3 {
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.packages .card .card-body p {
+  font-size: 15px;
+}
+
+.packages .card .card-body h6 {
+  font-size: 20px;
+  margin-top: 8px;
+  margin-bottom: 18px;
+}
+
+.packages .card .card-body a {
+  padding: 10px;
+  text-decoration: none;
+  background: var(--primary-color);
+  color: white;
+  border-radius: 5px;
+  margin-top: 4px;
+  transition: 0.4s;
+}
+
+#packages .card .card-body a:hover {
+  background-color: orange;
+  color: black;
+}
+
+.fa-solid {
+  color: gold;
+  margin: 4px 0;
+}
+
+/* Services  */
+.services {
+  background-image: url(Images/greece.jpeg);
+  background-size: cover;
+  margin-top: 50px;
+  padding: 24px;
+}
+
+.serviceh h1 {
+  color: white;
+}
+
+.services .card {
+  box-shadow: 0px 5px 5px -6px black;
+  border: none;
+  cursor: pointer;
+  margin: 20px 0;
+  padding: 20px;
+  display: flex; /* Add this line */
+  align-items: stretch; /* Add this line */
+}
+
+.services .card i {
+  font-size: 80px;
+  text-align: center;
+  color: var(--primary-color);
+  margin-top: 20px;
+}
+
+.services .card .card-body h3 {
+  font-weight: 500;
+}
+
+.services .card .card-body {
+  text-align: center;
+  color: #2e2e2e;
+}
+
+/* Gallery */
+.gallery {
+  margin-top: 50px;
+}
+
+.gallery .card {
+  border-radius: 10px;
+  box-shadow: 0px 5px 5px -6px black;
+  cursor: pointer;
+}
+
+.gallery .card img {
+  border-radius: 10px;
+}
+
+/* Packages */
+.about {
+  margin-top: 50px;
+}
+
+.about .card {
+  border-radius: 10px;
+}
+
+.about .card .img {
+  border-radius: 10px;
+}
+
+.about h2 {
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+#about-btn {
+  width: 150px;
+  height: 38px;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--primary-color);
+  color: white;
+  font-weight: 600;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+
+#about-btn:hover {
+  background-color: orange;
+  color: black;
+}
+
+/* Footer */
+
+#footer {
+  margin-top: 80px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  text-align: center;
+}
+
+#footer h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+#footer p {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+#footer .misc-info {
+  font-size: 12px;
+  color: #888;
+}
+
+.social-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 20px;
+}
+
+.social-links li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.social-links a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 50%;
+  color: #fff;
+  background-color: #333;
+  font-size: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.social-links a:hover {
+  background-color: #777;
+}
+
+#footer .copyright {
+  font-size: 12px;
+  color: #888;
+  margin-top: 10px;
+}
+
+/* Media */
+
+@media (max-width: 765px) {
+  .about {
+    padding: 0;
+  }
+}

@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Travel</title>
+      <!-- Bootstrap Link -->
+      <link
+         href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+         rel="stylesheet"
+         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+         crossorigin="anonymous"
+         />
+      <!-- Bootstrap Link -->
+      <!-- Font Awesome Cdn -->
+      <link
+         rel="stylesheet"
+         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+         />
+      <!-- Font Awesome Cdn -->
+      <link rel="stylesheet" href="styles.css" />
+      <!--Fonts-->
+   </head>
+   <body>
+      <!-- Navbar Start -->
+      <nav class="navbar navbar-expand-lg" id="navbar">
+         <div class="container">
+            <a class="navbar-brand" href="index.html" id="logo"
+               ><img src="./Images/Logo2.png" alt="logo"></a>
+            <button
+               class="navbar-toggler"
+               type="button"
+               data-bs-toggle="collapse"
+               data-bs-target="#mynavbar"
+               >
+            <span><i class="fa-solid fa-bars"></i></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mynavbar">
+               <ul class="navbar-nav me-auto">
+                  <li class="nav-item">
+                     <a class="nav-link" href="#book">Book</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="#packages">Packages</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="#services">Services</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="#gallary">Gallary</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="#about">About</a>
+                  </li>
+               </ul>
+               <form class="d-flex">
+                  <input class="form-control me-2" type="text" placeholder="Search" />
+                  <button class="btn btn-primary" type="button">Search</button>
+               </form>
+            </div>
+         </div>
+      </nav>
+      <!-- Home Section -->
+      <div class="hero" id="hero">
+         <div class="content">
+            <h1>Come Visit:<span class="changecontent">&nbsp;</span></h1>
+            <p>Plan and book your perfect trip with expert advice,
+               travel tips, destination information and
+               inspiration from us.h
+            </p>
+            <a href="#book">Book now</a>
+         </div>
+      </div>
+      <!-- Book Section -->
+      <div class="book" id="book">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-6 py-3 py-md-0">
+                  <div class="card">
+                     <img src="Images/Book2.jpeg" alt="travel image" />
+                  </div>
+               </div>
+               <div class="col-md-6 py-3 py-md-0">
+                  <div class="main-text">
+                     <h1>Book</h1>
+                  </div>
+                  <form action="#">
+                     <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Where to"
+                        required
+                        /><br />
+                     <input
+                        type="text"
+                        class="form-control"
+                        placeholder="How Many"
+                        required
+                        /><br />
+                     <input
+                        type="date"
+                        class="form-control"
+                        placeholder="Arrivals"
+                        required
+                        /><br />
+                     <input
+                        type="date"
+                        class="form-control"
+                        placeholder="Leaving"
+                        required
+                        /><br />
+                     <textarea
+                        class="form-control"
+                        rows="5"
+                        name="text"
+                        placeholder="Enter Your Name and Details"
+                        ></textarea
+                        ><br />
+                     <input
+                        type="submit"
+                        value="Book Now"
+                        class="submit"
+                        id="submit"
+                        required
+                        />
+                  </form>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- Packages Section -->
+      <div class="packages" id="packages">
+         <div class="container">
+            <div class="main-text">
+               <h1>Packages</h1>
+            </div>
+         </div>
+         <div class="row">
+            <div class="col-md-4 py-3 py-md-0">
+               <div class="card">
+                  <img src="./Images/marquee-uk.webp" alt="holiday" />
+                  <div class="card-body">
+                     <h3>United Kingdom</h3>
+                     <p>Experience the charm of the United Kingdom with our affordable package. Discover historical landmarks, and vibrant cities.</p>
+                     <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                     </div>
+                     <h6>Price: $500</h6>
+                     <a href="#book">Book now</a>
+                  </div>
+               </div>
+            </div>
+            <div class="col-md-4 py-3 py-md-0">
+               <div class="card">
+                  <img src="./Images/France-1980x1406.jpeg" alt="holiday" />
+                  <div class="card-body">
+                     <h3>France</h3>
+                     <p>Indulge in the beauty of France with our affordable package. Explore romantic Paris, stunning French Riviera, and charming countryside.</p>
+                     <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                     </div>
+                     <h6>Price: $500</h6>
+                     <a href="#book">Book now</a>
+                  </div>
+               </div>
+            </div>
+            <div class="col-md-4 py-3 py-md-0">
+               <div class="card">
+                  <img src="./Images/msid-91025208,width-96,height-65.jpeg" alt="holiday" />
+                  <div class="card-body">
+                     <h3>Vietnam</h3>
+                     <p>Indulge in the beauty of France with our affordable package. Explore romantic Paris, stunning French Riviera, and charming countryside.</p>
+                     <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                     </div>
+                     <h6>Price: $500</h6>
+                     <a href="#book">Book now</a>
+                  </div>
+               </div>
+            </div>
+            <div class="col-md-4 py-3 py-md-0">
+               <div class="card">
+                  <img src="./Images/morroco.jpeg" alt="holiday" />
+                  <div class="card-body">
+                     <h3>Morocco</h3>
+                     <p>Embark on an exciting journey to our new destination. Explore unique sights, immerse yourself in local culture, and create unforgettable memories.</p>
+                     <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                     </div>
+                     <h6>Price: $500</h6>
+                     <a href="#book">Book now</a>
+                  </div>
+               </div>
+            </div>
+            <div class="col-md-4 py-3 py-md-0">
+               <div class="card">
+                  <img src="./Images/Brazil small.png" alt="holiday" />
+                  <div class="card-body">
+                     <h3>Brazil</h3>
+                     <p>Experience our new destination like never before. Immerse yourself in the vibrant atmosphere, indulge in delicious cuisine, and explore the breathtaking landscapes.</p>
+                     <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                     </div>
+                     <h6>Price: $500</h6>
+                     <a href="#book">Book now</a>
+                  </div>
+               </div>
+            </div>
+            <div class="col-md-4 py-3 py-md-0">
+               <div class="card">
+                  <img src="./Images/turkey.jpeg" alt="holiday" />
+                  <div class="card-body">
+                     <h3>Turkey</h3>
+                     <p>Discover the wonders of our new destination. Immerse yourself in the rich history, soak in the natural beauty, and indulge in the local flavors.</p>
+                     <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                     </div>
+                     <h6>Price: $500</h6>
+                     <a href="#book">Book now</a>
+                  </div>
+               </div>
+            </div>
+            <!-- Service Section -->
+            <div class="services" id="services">
+               <div class="container">
+                  <div class="main-text serviceh">
+                     <h1>Services</h1>
+                  </div>
+                  <div class="row">
+                     <div class="col-md-4 py-3 py-md-0">
+                        <div class="card">
+                           <i class="fa-solid fa-sailboat"></i>
+                           <div class="card-body">
+                              <h3>Island Getaways</h3>
+                              <p>Escape to breathtaking islands and indulge in the ultimate tropical paradise. Our affordable hotel packages provide comfortable accommodations, beachfront.</p>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-md-4 py-3 py-md-0">
+                        <div class="card">
+                           <i class="fa-solid fa-person-biking"></i>
+                           <div class="card-body">
+                              <h3>Adventure Expeditions</h3>
+                              <p>Embark on thrilling adventures and explore the great outdoors with our affordable adventure packages. Whether you're hiking through mountains.</p>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-md-4 py-3 py-md-0">
+                        <div class="card">
+                           <i class="fa-solid fa-utensils"></i>
+                           <div class="card-body">
+                              <h3>Culinary Delights</h3>
+                              <p>Indulge your taste buds and experience the finest cuisines with our culinary packages. From exquisite fine dining restaurants to authentic street food markets.</p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      </div>
+      <!-- Gallery Section -->
+      <div class="gallery">
+      <div class="container">
+         <div class="main-txt">
+            <h1 class="galleryheader">Gallery</h1>
+            <div class="row">
+               <div class="col-md-4 py-3 py-md-0">
+                  <div class="card">
+                     <img src="./Images/travel1.jpeg">
+                  </div>
+               </div>
+               <div class="col-md-4 py-3 py-md-0">
+                  <div class="card">
+                     <img src="./Images/travel2.webp">
+                  </div>
+               </div>
+               <div class="col-md-4 py-3 py-md-0">
+                  <div class="card">
+                     <img src="./Images/travel3.jpeg">
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- About Section -->
+      <div class="about" id="about">
+         <div class="container">
+            <div class="main-txt">
+               <h1 class="galleryheader">About</h1>
+            </div>
+            <div class="row">
+               <div class="col-md-6 py-3 py-md-0">
+                  <div class="card">
+                     <img src="/Images/travelagency.jpeg" alt="">
+                  </div>
+               </div>
+               <div class="col-md-6 py-3 py-md-0">
+                  <h2>How Travel Agency</h2>
+                  <p>Our team of experienced travel experts is dedicated to providing exceptional service and ensuring your journey is seamless and memorable. Start your travel journey with us today!"</p>
+                  <button id="about-btn">Read More</button>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- Footer Section -->
+      <footer id="footer">
+         <h1>Travel</h1>
+         <p>Experience the world with our travel agency. We offer unforgettable adventures and tailor-made itineraries to explore breathtaking destinations. Discover stunning landscapes, immerse yourself in diverse cultures, and create lifelong memories.</p>
+         <ul class="social-links">
+            <li><a href="#" target="_blank"><i class="fab fa-facebook"></i></a></li>
+            <li><a href="#" target="_blank"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="#" target="_blank"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="#" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+            <li><a href="#" target="_blank"><i class="fab fa-youtube"></i></a></li>
+            <li><a href="#" target="_blank"><i class="fab fa-pinterest"></i></a></li>
+            <li><a href="#" target="_blank"><i class="fab fa-github"></i></a></li>
+            <li><a href="#" target="_blank"><i class="fab fa-snapchat"></i></a></li>
+         </ul>
+         <p class="misc-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+         <p class="copyright">&copy; Travel Agency</p>
+      </footer>
+      <script
+         src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+         crossorigin="anonymous"
+         ></script>
+      <script src="script.js"></script>
+   </body>
+</html>
